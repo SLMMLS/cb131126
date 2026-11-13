@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        The window itself is black before Compose has drawn a single pixel: no white flash on start, and the bars
+        behind the system icons are the same black (MainActivity makes the app edge to edge with transparent bars).
+        Dark parent on purpose: the app is black glass whatever the system theme is (see ui/Theme.kt).
+    -->
+    <style name="Theme.ClipSync" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>
